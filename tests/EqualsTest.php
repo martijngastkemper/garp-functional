@@ -18,6 +18,8 @@ class EqualsTest extends TestCase {
         $traverser = new MockSpiceTraverser();
         $this->assertTrue(f\equals($traverser, $traverser));
         $this->assertFalse(f\equals(new MockSpiceTraverser, new MockSpiceTraverser));
+
+        $this->assertFalse(f\equals(123, '123'));
     }
 
     public function test_should_be_curried() {

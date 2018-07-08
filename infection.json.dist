@@ -1,0 +1,15 @@
+{
+    "timeout": 10,
+    "source": {
+        "directories": [
+            "library"
+        ]
+    },
+    "logs": {
+        "text": "infection-log.txt"
+    },
+    "mutators": {
+        "@default": true,
+        "FunctionCall": false
+    }
+}
