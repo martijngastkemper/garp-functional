@@ -9,12 +9,18 @@ use Garp\Functional as f;
  */
 class AddTest extends TestCase {
 
+    /**
+     * @covers f\add
+     */
     public function test_should_add_numbers() {
         $this->assertEquals(10, f\add(5, 5));
         $this->assertEquals(5, f\add(5, 0));
         $this->assertEquals(5, f\add(10, -5));
     }
 
+    /**
+     * @covers ::f\add
+     */
     public function test_should_be_curried() {
         $add5 = f\add(5);
         $this->assertTrue(is_callable($add5));

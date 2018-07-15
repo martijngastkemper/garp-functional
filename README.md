@@ -37,3 +37,11 @@ That'll do, all functions are available to you.
 
 [Read the docs for a complete
 reference](https://github.com/grrr-amsterdam/garp-functional/blob/master/docs/index.md)
+
+## Development
+
+Run Infection:
+
+```
+docker run -it -v `pwd`:/app infection
+```
